@@ -19,10 +19,15 @@ app.controller("ExamController", function($scope){
         $scope.newStudent.score = "";
       };
     
-      $scope.removeStudent = function(student) {
+    $scope.updateScore = function(student) {
+        var newScore = prompt("Enter new score for " + student.name + ":");
+        student.score = parseInt(newScore);
+      };
+       
+    $scope.removeStudent = function(student) {
         var index = $scope.students.indexOf(student);
         if (index > -1) {
-          $scope.students.splice(index, 1);
+        $scope.students.splice(index, 1);
         }
       };
 });
