@@ -1,10 +1,21 @@
+body{
+    background: gainsboro ;
+  }
+
+h1{
+    text-align: center;
+    color: rgb(85, 0, 28);
+}
+
+
+
 table{
     border-collapse: collapse;
     width: 100%;
 }
 
 th, td{
-    border : 1px solid powderblue;
+    border : 1px solid rgb(131, 131, 131);
     padding : 8px;
     text-align : left;
 }
@@ -13,6 +24,7 @@ th, td{
 th{
     background-color: cornflowerblue;
     color : black;
+    font-family: 'Arial Narrow';
 }
 
 form {
@@ -32,7 +44,7 @@ form {
   
   button {
     padding: 5px;
-    background-color: #c6ffc8;
+    background-color:#f6c8ff;
     color: rgb(8, 8, 8);
     border: none;
     border-radius: 5px;
@@ -40,5 +52,5 @@ form {
   }
   
   button:hover {
-    background-color: #ee9bff;
+    background-color:#c6ffc8;
   }
