@@ -27,12 +27,16 @@
         <th>Name</th>
         <th>Subject</th>
         <th>Score</th>
+        <th>Actions</th>
       </tr>
       <tr ng-repeat="student in students">
         <td ng-bind="student.name"></td>
         <td ng-bind="student.subject"></td>
         <td ng-bind="student.score"></td>
-        <td><button ng-click="removeStudent(student)">Remove</button></td>
+        <td>
+          <button ng-click="updateScore(student)">Update Score</button>
+          <button ng-click="removeStudent(student)">Remove</button>
+        </td>
       </tr>
     </table>
       
